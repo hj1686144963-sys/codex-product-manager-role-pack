@@ -50,7 +50,7 @@ python3 scripts/verify.py
 }
 ```
 
-完整步骤见 [环境重建清单](environment/REBUILD-CHECKLIST.md)。不熟悉终端时，可把 [SHARE-PROMPT.md](SHARE-PROMPT.md) 全文发给 Codex 辅助安装。
+完整步骤见 [环境重建清单](REBUILD-CHECKLIST.md)；同一文件也包含在 ZIP 的 `environment/` 目录中。不熟悉终端时，可把 [SHARE-PROMPT.md](SHARE-PROMPT.md) 全文发给 Codex 辅助安装。
 
 ## 公共能力发布规则
 
