@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Manager Core"
+  short_description: "Reusable product planning, PRD, evaluation, and Agent workflow"
+  default_prompt: "Use $product-manager-core to turn this request into a concise, testable product decision and handoff."
