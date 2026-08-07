@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "package": "codex-product-manager-role-pack",
+  "package_version": "0.2.0",
+  "python_minimum": "3.9",
+  "required_skills": [
+    "product-manager-core",
+    "five-role-deliberation",
+    "codex-auto-memory",
+    "leiniao-ui-design-baseline"
+  ],
+  "required_agents": [
+    "coordinator",
+    "researcher",
+    "product-strategist",
+    "system-strategist",
+    "red-team-editor"
+  ],
+  "default_vault": "~/Documents/Codex-Obsidian-Vault-Product-Manager",
+  "public_release_requires_human_approval": true
+}
