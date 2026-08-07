@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0 — 2026-08-07
+
+- GitHub 目录成为可直接阅读的知识源，ZIP 只保留分发用途。
+- 新增同岗位多人共享结构：岗位 approved/candidates/evaluations 与个人 Private 状态分离。
+- 检索改为小片段命中并补充标题路径、上级摘要。
+- 新增 `source_id + content_hash` 增量更新、移动、删除和重复识别。
+- 新增产品经理岗位回归集和 Skill 生命周期注册表。
+- 明确本期不安装 LlamaIndex、向量库和全公司权限过滤。
+
 ## 0.1.0 — 2026-08-07
 
 - 首次公开 Beta：产品经理岗位画像、产品方法、五角色与四个核心 Skill。
