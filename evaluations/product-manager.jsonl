@@ -1,0 +1,4 @@
+{"id":"company-evidence-rule","query":"无法访问资料时怎么处理事实和未知","allowed_prefixes":["company"],"expected_any":["company/rules.md"],"forbidden":["people/personal.md"]}
+{"id":"role-skill-release","query":"产品岗位候选 Skill 的发布门和旧 Skill 替换","allowed_prefixes":["roles/product-manager"],"expected_any":["roles/product-manager/approved.md"],"forbidden":["people/personal.md"],"context_contains":["章节路径：产品经理 > Skill 生命周期 > 发布门","上级摘要："]}
+{"id":"project-isolation","query":"Alpha 剧本资产项目当前做什么","allowed_prefixes":["projects/alpha"],"expected_any":["projects/alpha/status.md"],"forbidden":["projects/beta/status.md"]}
+{"id":"personal-not-role","query":"产品岗位公共文档是否必须使用蓝色标题","allowed_prefixes":["people","roles/product-manager"],"expected_any":["people/personal.md"],"forbidden":[]}
