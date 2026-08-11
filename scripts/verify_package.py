@@ -55,6 +55,10 @@ REQUIRED = [
     "evaluations/product-manager.jsonl",
     "skills/REGISTRY.json",
     "skills/product-manager-core/references/knowledge-governance.md",
+    "docs/DASHI-TASKBOARD-INTEGRATION.md",
+    "docs/RELEASE-0.3.0.md",
+    "scripts/Initialize-WorkspaceFolders.ps1",
+    "release/versions/v0.3.0/manifest.json",
 ]
 
 
@@ -144,6 +148,32 @@ def main() -> int:
             "errors": checksum_errors,
         }
     )
+
+    forbidden_paths = []
+    forbidden_parts = {".git", ".tmp", "node_modules", "__pycache__"}
+    forbidden_suffixes = {".sqlite", ".sqlite3", ".db", ".wal", ".shm"}
+    for path in root.rglob("*"):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(root)
+        if forbidden_parts.intersection(relative.parts):
+            continue
+        if path.suffix.lower() in forbidden_suffixes or path.name.endswith(("-wal", "-shm")):
+            forbidden_paths.append(str(relative))
+    checks.append({"check": "no_runtime_or_database_files", "ok": not forbidden_paths, "files": forbidden_paths})
+
+    private_path_hits = []
+    private_path_pattern = re.compile(r"(?:[A-Za-z]:\\Users\\[^\\\s]+|/Users/[^/\s]+)")
+    for path in list(root.rglob("*.md")) + list(root.rglob("*.json")) + list(root.rglob("*.ps1")) + list(root.rglob("*.py")):
+        relative = path.relative_to(root)
+        if forbidden_parts.intersection(relative.parts) or relative == Path("scripts/verify_package.py"):
+            continue
+        try:
+            if private_path_pattern.search(path.read_text(encoding="utf-8")):
+                private_path_hits.append(str(path.relative_to(root)))
+        except (OSError, UnicodeDecodeError):
+            pass
+    checks.append({"check": "no_private_absolute_paths", "ok": not private_path_hits, "files": private_path_hits})
 
     failed = [check for check in checks if not check["ok"]]
     print(

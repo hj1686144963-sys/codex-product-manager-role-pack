@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "package": "codex-product-manager-role-pack",
+  "version": "0.3.0",
+  "released_on": "2026-08-12",
+  "previous_version": "0.2.0",
+  "public_data_policy": "allowlist-only",
+  "includes": [
+    "five-role deliberation",
+    "product-manager workflow",
+    "local memory governance",
+    "workspace folder initializer",
+    "Dashi integration contract and validation guidance"
+  ],
+  "excludes": [
+    "private vaults and logs",
+    "credentials and authentication state",
+    "absolute user paths",
+    "SQLite/WAL/SHM runtime data",
+    "unlicensed Dashi upstream source, author UI, and derived bundles"
+  ],
+  "required_checks": [
+    "verify_package.py",
+    "secret and private-path scan",
+    "clean checkout package build",
+    "human review before public release"
+  ]
+}

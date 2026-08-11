@@ -17,7 +17,7 @@ except ImportError:
     tomllib = None
 
 PLUGIN_NAME = "codex-product-manager-role-pack"
-PLUGIN_VERSION = "0.2.0"
+PLUGIN_VERSION = "0.3.0"
 FIVE_ROLE_SKILL = "five-role-deliberation"
 DESIGN_SKILL = "leiniao-ui-design-baseline"
 AUTO_MEMORY_SKILL = "codex-auto-memory"

@@ -1,0 +1,6 @@
+interface:
+  display_name: "五角色审议"
+  short_description: "用五种独立视角审议复杂产品、模型与 Agent 架构决策"
+  default_prompt: "Use $five-role-deliberation to review this topic from five independent perspectives and return a decision report."
+policy:
+  allow_implicit_invocation: true

@@ -2,7 +2,7 @@
 
 这是一个可公开安装的 Codex 产品经理岗位包。它把产品工作方法、五角色审议、设计规范、常用 Skill、按需知识检索和环境重建能力放进同一个版本化插件中。安装后可直接在新任务和新项目中使用，不要求反复输入触发词。
 
-> 当前版本：`0.2.0 Beta`。本包来自一个已运行的个人产品经理系统，但尚未经过多人、跨项目验证；个人习惯不会自动晋升为公共规则。
+> 当前版本：`0.3.0 Beta`。本包来自一个已运行的个人产品经理系统，但尚未经过多人、跨项目验证；个人习惯不会自动晋升为公共规则。
 
 ## 包含的能力
 
@@ -15,6 +15,8 @@
 - 增量去重：用 `source_id + content_hash` 跳过未变化文件、识别更新、移动与重复内容。
 - 岗位评测：在 Skill 新增、替换、合并、废弃前运行岗位回归集。
 - 环境重建：安装清单、依赖说明、验证脚本和回滚脚本均在本仓库内，不另建第三个包。
+- 版本化目录：每次发布都有独立 Manifest，安装器只创建缺失目录，不覆盖用户数据。
+- Taskboard 集成契约：公开真实同源镜像、SSE、验收与防复发规则，但不再分发未获许可的第三方 Dashi UI 或源码。
 
 ## 目录分类
 
@@ -31,6 +33,7 @@ codex-product-manager-role-pack/
 ├── knowledge/                      # GitHub 可直接读取的岗位共享知识
 ├── evaluations/                    # 产品经理岗位回归评测集
 ├── scripts/                        # 安装、验证、构建和回滚
+├── release/versions/               # 各版本 Manifest 与升级边界
 └── SHARE-PROMPT.md                 # 给 Codex 的一次性安装指令
 ```
 
@@ -56,6 +59,14 @@ python3 scripts/verify.py
 ```
 
 完整步骤见 [环境重建清单](REBUILD-CHECKLIST.md)；同一文件也包含在 ZIP 的 `environment/` 目录中。不熟悉终端时，可把 [SHARE-PROMPT.md](SHARE-PROMPT.md) 全文发给 Codex 辅助安装。
+
+Windows 上可先运行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\Initialize-WorkspaceFolders.ps1
+```
+
+它只创建缺失目录，不删除或覆盖现有 Vault。Dashi 的通用架构、许可证边界和跨电脑验收见 [Dashi Taskboard 集成与防复发指南](docs/DASHI-TASKBOARD-INTEGRATION.md)。
 
 GitHub 上的文件夹是日常阅读和 AI 调用源，ZIP 只是下载/安装产物。多人共享方式见 [多岗位、多人员知识共享](docs/MULTI-USER-KNOWLEDGE.md)，Skill 替换与合并规则见 [Skill 生命周期](docs/SKILL-LIFECYCLE.md)。
 

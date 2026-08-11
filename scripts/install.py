@@ -20,7 +20,7 @@ except ImportError:  # Python 3.10 and earlier
     tomllib = None
 
 PLUGIN_NAME = "codex-product-manager-role-pack"
-PLUGIN_VERSION = "0.2.0"
+PLUGIN_VERSION = "0.3.0"
 FIVE_ROLE_SKILL = "five-role-deliberation"
 DESIGN_SKILL = "leiniao-ui-design-baseline"
 AUTO_MEMORY_SKILL = "codex-auto-memory"
@@ -258,7 +258,21 @@ def install_plugin(source: Path, destination: Path) -> None:
     shutil.copytree(
         source,
         temp_destination,
-        ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".DS_Store"),
+        ignore=shutil.ignore_patterns(
+            ".git",
+            ".tmp",
+            ".venv",
+            "venv",
+            "node_modules",
+            "__pycache__",
+            "*.pyc",
+            "*.zip",
+            "*.sqlite*",
+            "*.db",
+            "*-wal",
+            "*-shm",
+            ".DS_Store",
+        ),
     )
     if destination.exists():
         shutil.rmtree(destination)

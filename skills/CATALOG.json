@@ -1,15 +1,12 @@
 {
-    "schema_version":  3,
-    "generated":  true,
-    "generated_from":  "skills/CATALOG.json + skills/*/SKILL.md",
-    "generated_by":  "scripts/Generate-SkillRegistry.ps1",
+    "schema_version":  1,
     "governance":  {
                        "capability_docs_required":  true,
-                       "capability_docs_generator":  "scripts/Generate-SkillCapabilityDocs.ps1",
                        "merge_lineage_required":  true,
-                       "routing_tests_required":  true,
-                       "routing_tests":  "evaluations/skill-routing-cases.json",
-                       "default_docs_path":  "docs/skill-capabilities"
+                       "runtime_roots":  [
+                                             "%USERPROFILE%/.agents/skills",
+                                             "%USERPROFILE%/.codex/skills"
+                                         ]
                    },
     "category_taxonomy":  {
                               "product.strategy":  "产品价值、需求、交互状态与验收定义",
@@ -28,7 +25,6 @@
                        "category":  "product.strategy",
                        "risk":  "read-only",
                        "capability_summary":  "当任务需要澄清用户价值、范围、交互状态、验收标准或形成简明 PRD 时，调用产品经理核心流程；不用于单纯执行已经明确的低风险修改。",
-                       "route_description":  "Apply a reusable product-manager workflow to product planning, requirement clarification, concise PRDs, interaction-state reviews, model evaluation, and Agent or Skill efficiency design. Use when a task needs user value, product logic, scope, acceptance criteria, product handoff, or controlled AI capability evaluation.",
                        "capabilities":  [
                                             "需求澄清",
                                             "简明 PRD",
@@ -41,8 +37,6 @@
                                       "path":  "skills/product-manager-core",
                                       "license":  "repository-license"
                                   },
-                       "skill_sha256":  "5883a2c25c8d19f6330a7da8d531a0752242fee0030a164c1c6b2288c9d686a2",
-                       "capability_manual":  "docs/skill-capabilities/product-manager-core.md",
                        "merged_from":  [
 
                                        ],
@@ -56,7 +50,6 @@
                        "category":  "governance.decision",
                        "risk":  "read-only",
                        "capability_summary":  "当重要决策存在多条路径、证据冲突或高影响风险时，调用五角色独立审议并保留分歧；审议完成且用户授权后可生成只读 UI 设计交接，但不在面板内执行。",
-                       "route_description":  "Use a fixed five-role review panel to challenge complex product, interaction, model-evaluation, Codex Agent, Skill, memory, automation, and department-efficiency decisions. Trigger when the user explicitly asks for 五角色审议、多角度讨论、反复讨论, or when a decision has multiple viable paths, material uncertainty, conflicting evidence, high impact, or repeated stalled reasoning. Do not invoke the full panel for clear low-risk execution, formatting, simple edits, or when the user says 直接执行.",
                        "capabilities":  [
                                             "五角色独立审议",
                                             "证据核验",
@@ -70,8 +63,6 @@
                                       "path":  "skills/five-role-deliberation",
                                       "license":  "repository-license"
                                   },
-                       "skill_sha256":  "1f1e56f69561a2e6fd69e7cd3fcabbca231b6836e5862703b4dd498ef1d8dea0",
-                       "capability_manual":  "docs/skill-capabilities/five-role-deliberation.md",
                        "merged_from":  [
 
                                        ],
@@ -85,7 +76,6 @@
                        "category":  "knowledge.memory",
                        "risk":  "local-write",
                        "capability_summary":  "当任务依赖历史项目、稳定规则、复盘或跨会话连续性时，按需检索并安全回写本地记忆；不把记忆作为最新外部事实的证明。",
-                       "route_description":  "Automatically continue work across Codex chats by using local Memories, selectively retrieving a configured Markdown or Obsidian knowledge base, and safely writing back durable decisions, methods, project state, Goodcase, Badcase, and anti-regression lessons. Use when a task refers to prior work, an existing project, remembered preferences, a knowledge base, repeated mistakes, role growth, postmortems, self-growing knowledge, cross-chat continuity, memory setup, memory diagnosis, or plugin installation and verification.",
                        "capabilities":  [
                                             "跨会话检索",
                                             "Obsidian 记忆路由",
@@ -98,8 +88,6 @@
                                       "path":  "skills/codex-auto-memory",
                                       "license":  "repository-license"
                                   },
-                       "skill_sha256":  "3b2ac2edb42b473b3c1331d97c7c0a3fa8c05cef3313033e401c2db07f5deae8",
-                       "capability_manual":  "docs/skill-capabilities/codex-auto-memory.md",
                        "merged_from":  [
 
                                        ],
@@ -113,7 +101,6 @@
                        "category":  "design.ui",
                        "risk":  "read-only",
                        "capability_summary":  "当任务需要依据雷鸟视觉基线设计或审查产品界面时，提供组件、Token、状态、响应式与无障碍约束；不自动替代项目已经确认的设计系统。",
-                       "route_description":  "Apply the user\u0027s persistent UI design baseline to Figma designs and vibe-coding implementations for web pages, web apps, product interfaces, prototypes, dashboards, AIGC workbenches, billing, permissions, model management, data views, AI interactions, and mobile interfaces. Use by default whenever the user asks Codex to design, redesign, polish, or implement UI in Figma or code, unless the user explicitly selects another design system or an existing project has a confirmed incompatible visual system.",
                        "capabilities":  [
                                             "UI 视觉基线",
                                             "设计系统约束",
@@ -126,8 +113,6 @@
                                       "path":  "skills/leiniao-ui-design-baseline",
                                       "license":  "repository-license"
                                   },
-                       "skill_sha256":  "28fe7a4409ecb7e5bf563d35e74563f489397bad91f507dd8dac7810f7cc24cc",
-                       "capability_manual":  "docs/skill-capabilities/leiniao-ui-design-baseline.md",
                        "merged_from":  [
 
                                        ],

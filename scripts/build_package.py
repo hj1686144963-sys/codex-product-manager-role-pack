@@ -11,7 +11,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 PLUGIN_NAME = "codex-product-manager-role-pack"
-VERSION = "0.2.0"
+VERSION = "0.3.0"
+
+EXCLUDED_PARTS = {".git", ".tmp", "__pycache__", "node_modules", ".venv", "venv"}
+EXCLUDED_SUFFIXES = {".pyc", ".zip", ".sqlite", ".sqlite3", ".db", ".wal", ".shm"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -25,7 +28,9 @@ def included_files(root: Path) -> list[Path]:
     for path in root.rglob("*"):
         if not path.is_file():
             continue
-        if "__pycache__" in path.parts or path.suffix in {".pyc", ".zip"}:
+        if EXCLUDED_PARTS.intersection(path.parts):
+            continue
+        if path.suffix.lower() in EXCLUDED_SUFFIXES or path.name.endswith(("-wal", "-shm")):
             continue
         if path.name == "PACKAGE-CHECKSUMS.json":
             continue

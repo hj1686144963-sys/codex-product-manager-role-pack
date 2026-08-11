@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "package": "codex-product-manager-role-pack",
-  "package_version": "0.2.0",
+  "package_version": "0.3.0",
   "python_minimum": "3.9",
   "required_skills": [
     "product-manager-core",
@@ -17,5 +17,8 @@
     "red-team-editor"
   ],
   "default_vault": "~/Documents/Codex-Obsidian-Vault-Product-Manager",
+  "release_manifest": "release/versions/v0.3.0/manifest.json",
+  "folder_initializer": "scripts/Initialize-WorkspaceFolders.ps1",
+  "dashi_distribution": "contract-and-validation-only",
   "public_release_requires_human_approval": true
 }
