@@ -1,0 +1,28 @@
+{
+  "name": "codex-product-manager-role-pack",
+  "version": "0.5.0-beta.1",
+  "description": "公开可安装的 Codex 产品经理岗位包，包含中枢任务路由、产品主岗位、按需支持岗位、五角色、知识检索、岗位评测与环境重建。",
+  "author": {
+    "name": "Open Role Pack Contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex 产品经理公共能力包",
+    "shortDescription": "中枢路由、产品主岗、支持岗位与五角色",
+    "longDescription": "面向产品经理的可复用 Codex 岗位包。中枢 Agent 先判断任务归属；产品经理作为主岗位完成产品工作，并按需申请 UI、AI Agent 架构或导演岗位支持；同时提供五角色审议、知识检索、环境重建和公共能力治理。",
+    "developerName": "Open Role Pack Contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "brandColor": "#36D399",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "检查并初始化产品经理公共能力包。",
+      "根据现有项目继续产品方案、交互、模型评测、PRD 或 Agent 架构工作。",
+      "进行 Figma 或界面设计时加载通用 UI 设计基线；项目既有组件和 Token 优先，否则使用 Arco 主基线。"
+    ]
+  }
+}

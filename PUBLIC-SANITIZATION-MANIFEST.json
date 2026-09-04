@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "release": "0.5.0-beta.1",
+  "export_policy": "allowlist-only",
+  "included": [
+    "agents",
+    "skills",
+    "assets/knowledge-base",
+    "assets/templates",
+    "docs",
+    "environment",
+    "evaluations",
+    "knowledge",
+    "scripts"
+  ],
+  "excluded_categories": [
+    "personal memories and preferences",
+    "company and project identifiers",
+    "private links and local absolute paths",
+    "raw conversations and screenshots",
+    "credentials, cookies, tokens and private keys",
+    "runtime databases and caches"
+  ],
+  "log_policy": "Keep reusable scenario, symptom, root cause, fix, verification and prevention; remove source identity and business-specific evidence.",
+  "promotion_gate": "Deduplicate, replay, review counterexamples, run regression tests, then require maintainer approval.",
+  "behavior_fidelity_gate": "P0 cases must pass 100%; P1 cases must pass at least 95%.",
+  "negative_fixture_exception": {
+    "path": "evaluations/fixtures/unsafe-private-sample.txt",
+    "sha256": "4fc94f4b00d388de673eee067ded90c7cbc0d690a6de4236476893c123a07ec1",
+    "purpose": "Synthetic scanner self-test only; any path or content change is blocked."
+  }
+}

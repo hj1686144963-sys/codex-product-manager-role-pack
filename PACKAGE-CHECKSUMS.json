@@ -1,0 +1,547 @@
+{
+  "plugin": "codex-product-manager-role-pack",
+  "version": "0.5.0-beta.1",
+  "generated_at": "2026-09-04T04:31:47+00:00",
+  "files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "size": 1396,
+      "sha256": "78673ab2fc9bcfad1d14d53cb8be424aa7d3c5c72b393006d6299d4fe2dceacb"
+    },
+    {
+      "path": ".gitignore",
+      "size": 66,
+      "sha256": "570df71b87efcc600bf78de8a9b91d7599ab3458d5fe82f5e705974eca804a13"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 2489,
+      "sha256": "60d13ef704efd8ced87397ce4bce675ac803be7e3413095129386af49bec0d5b"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1084,
+      "sha256": "ecf2994fe43fbf7a94bc75bba025807f80e26f3d8e2637ccf2758611f111d2b5"
+    },
+    {
+      "path": "PUBLIC-SANITIZATION-MANIFEST.json",
+      "size": 1201,
+      "sha256": "1e63d816f309b6568c6028f7357acf0260febd69467a8e66d6e9d842a6a493d1"
+    },
+    {
+      "path": "PUBLIC-SOURCES.json",
+      "size": 874,
+      "sha256": "f982f76eaecfc4728653ba8037225e28e348181e62d6c61a5d315e54319228cc"
+    },
+    {
+      "path": "README.md",
+      "size": 6395,
+      "sha256": "b854e7279a5b00ccceafcd03e33f81afb02eae92fcfdaab90205611e6cc855a8"
+    },
+    {
+      "path": "REBUILD-CHECKLIST.md",
+      "size": 1436,
+      "sha256": "034b3a7ce3f84d501ef58a5456b12799cd2137ef52dd7d2375fde77bc186c9ee"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 564,
+      "sha256": "696599e76103b780de954a5d0053b8a1f45392ef659abb2b8658ea2a97d393bb"
+    },
+    {
+      "path": "SHARE-PROMPT.md",
+      "size": 1950,
+      "sha256": "96ba15ebf16e24edc786ebde144c258e1f5146e20d9fe8587e85255c275f3832"
+    },
+    {
+      "path": "agents/ai-agent-architect-specialist.toml",
+      "size": 807,
+      "sha256": "f414c0a10f3790420888243fc27556cfa5fef105e0c738d250818afb0d3c083c"
+    },
+    {
+      "path": "agents/coordinator.toml",
+      "size": 978,
+      "sha256": "1a2966aec40827727fc3dfcfa7dcb6184163579ab24e324f5c8562433414c885"
+    },
+    {
+      "path": "agents/director-specialist.toml",
+      "size": 727,
+      "sha256": "c4b099c3c4fa508c95f9bfb55cd0a2b5363b9056e584656823ae082b50f3cb99"
+    },
+    {
+      "path": "agents/product-manager-specialist.toml",
+      "size": 1218,
+      "sha256": "976d2c364e968e2357df5bfb43ec55b427789c9ce47f130c55eea58215d29bf5"
+    },
+    {
+      "path": "agents/product-strategist.toml",
+      "size": 965,
+      "sha256": "daa48773cf4a50b4410bd53b8caa1851bfd5ac67fae4da7b4de31695dcf0dc7a"
+    },
+    {
+      "path": "agents/red-team-editor.toml",
+      "size": 745,
+      "sha256": "3b92b37f54822a7eba1cfb3a2ab31a4bec70f79b2df0356dde6cca3595e574bd"
+    },
+    {
+      "path": "agents/researcher.toml",
+      "size": 832,
+      "sha256": "eac2069e365a39f7dd9de57e209cb1f6379d013071b2c6a2fe514207f7b1dd4c"
+    },
+    {
+      "path": "agents/system-strategist.toml",
+      "size": 721,
+      "sha256": "ada300de653b3e3477bda84d7a51937ad351a8fc1a3a2459a0bffc96150c3208"
+    },
+    {
+      "path": "agents/ui-designer-specialist.toml",
+      "size": 810,
+      "sha256": "41437a449938c2d1ea4ad0ab19f7af54f836ec23383b4e9b65dcb17f9df2428b"
+    },
+    {
+      "path": "assets/icon.svg",
+      "size": 443,
+      "sha256": "5b80367d908c6a1de31b192d8f7dc1f047cd9f3373edde248171726b958f767d"
+    },
+    {
+      "path": "assets/knowledge-base/00-Inbox/README.md",
+      "size": 169,
+      "sha256": "6baceb860dadba8b984c8868657e9fe0e7a1a8bf0ff9ffd42a88d722cd981692"
+    },
+    {
+      "path": "assets/knowledge-base/01-Role/产品经理岗位画像.md",
+      "size": 1589,
+      "sha256": "0a011704deff40cf9a21b0d4c0139a1450e556d2ed7c80ed6b236c649e02c7da"
+    },
+    {
+      "path": "assets/knowledge-base/01-Sources/索引.md",
+      "size": 104,
+      "sha256": "f008c18c574f26dc3ab14a138ef8027db48651bc8dfc1a9778a5994b471254ad"
+    },
+    {
+      "path": "assets/knowledge-base/02-Knowledge/索引.md",
+      "size": 134,
+      "sha256": "8313af4d3a8d9448e66b840b3938f7ebee74c5cbf3b55bd8226c62456f062156"
+    },
+    {
+      "path": "assets/knowledge-base/03-Projects/索引.md",
+      "size": 107,
+      "sha256": "5e292c86f146fa175cfad8266e463dcddd780c2052ffc5c4f1576133b74c4978"
+    },
+    {
+      "path": "assets/knowledge-base/04-Methods/Codex Agent与部门提效.md",
+      "size": 670,
+      "sha256": "6948d7866247f8792a471992a2cfd5026ffd54e2d68bc4948843df75783087ec"
+    },
+    {
+      "path": "assets/knowledge-base/04-Methods/产品UI设计基线.md",
+      "size": 571,
+      "sha256": "1dbcee0d66acb8ebfe3f4709e3f8d7d40df37bffbe427cf1024981cbb328e0c8"
+    },
+    {
+      "path": "assets/knowledge-base/04-Methods/模型评测工作法.md",
+      "size": 542,
+      "sha256": "cf5c1e026614c7eca8f2829fed7deec15e1605b4a2cffb23d82cac975d136646"
+    },
+    {
+      "path": "assets/knowledge-base/04-Methods/简明PRD交接规则.md",
+      "size": 745,
+      "sha256": "288f489368ff91f4f7a8bac8dfa3bff08c94dfcfc5ff4de95e0c5c03acbf35e3"
+    },
+    {
+      "path": "assets/knowledge-base/04-Methods/索引.md",
+      "size": 86,
+      "sha256": "66db0cec5b0a6f4a5eaa9607001d47198dc0ac39560c0f7f4bfe73b86fc33b25"
+    },
+    {
+      "path": "assets/knowledge-base/05-Outputs/索引.md",
+      "size": 92,
+      "sha256": "5c07c5ab0f4d71f947b501a87e49d758503fbf5318761f855951896395107b69"
+    },
+    {
+      "path": "assets/knowledge-base/06-Growth/README.md",
+      "size": 454,
+      "sha256": "872689edee7906afdf6c041e492758331d91aa3c8c9aa4dd1e70f708ffad145e"
+    },
+    {
+      "path": "assets/knowledge-base/06-Growth/个人目录/README.md",
+      "size": 256,
+      "sha256": "1df4216cad877763804505f340c05590cf808bb13caa433cb3fcc475c9d6fb73"
+    },
+    {
+      "path": "assets/knowledge-base/06-Growth/公共资产候选/README.md",
+      "size": 229,
+      "sha256": "1035c182f3adc72feb7fbabf3cead381d105d1a2608ed2bb2e8fa557a21e9e8d"
+    },
+    {
+      "path": "assets/knowledge-base/06-Growth/岗位模板/README.md",
+      "size": 183,
+      "sha256": "b5e0bfbd7e67117c34aae178252c082acf7cab1b17b76779e9972f3b7caa6d60"
+    },
+    {
+      "path": "assets/knowledge-base/08-System/决策记录.md",
+      "size": 988,
+      "sha256": "f4dad553a5578825333670f2678e2774850c7f3dddabf1f062ef5afff47dc58f"
+    },
+    {
+      "path": "assets/knowledge-base/08-System/研究日志/2026-08-22-公共能力包脱敏发布.md",
+      "size": 549,
+      "sha256": "457eb58372eca42c6f87b99b60371158c63417b44f8b411185647dcc95e46b8d"
+    },
+    {
+      "path": "assets/knowledge-base/08-System/研究日志/README.md",
+      "size": 140,
+      "sha256": "a16ca512c6f397da57a43376d2c8c42b208e933578aee38ca9aa892c2d8d5f9c"
+    },
+    {
+      "path": "assets/knowledge-base/08-System/防踩坑记录.md",
+      "size": 1384,
+      "sha256": "bae387e4e7883542165db463c46d72ff17638964f1e16840912eb0a989bbb067"
+    },
+    {
+      "path": "assets/knowledge-base/AGENTS.md",
+      "size": 3080,
+      "sha256": "43c0de71c1402282ccf3c5254cbfed358e1ae2df3e1e4d05d01cd88e7afa2bee"
+    },
+    {
+      "path": "assets/knowledge-base/README.md",
+      "size": 452,
+      "sha256": "6a863b4b0bb67f337214c10d706957d672cc841986378fa333ccc1c4283332e0"
+    },
+    {
+      "path": "assets/knowledge-base/START-HERE.md",
+      "size": 1970,
+      "sha256": "5359630f47cd3b657b499eac6712b99c121592283f19de054b04038d3ee028ac"
+    },
+    {
+      "path": "assets/logo.svg",
+      "size": 551,
+      "sha256": "fbba2bd893cab489e5776b7790de8bab2fe464e4205982a433202289f9705a43"
+    },
+    {
+      "path": "assets/templates/global-agents-block.md",
+      "size": 4947,
+      "sha256": "da721c0ec728e2babd93f68f16b9c1d81736a058adad2b526e9ca363ac0682c6"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "size": 1893,
+      "sha256": "4cc4dcdd661a8608efd2d0011eb5f0d4d457da7eecdae89ec1d5ec59c6296b40"
+    },
+    {
+      "path": "docs/MULTI-USER-KNOWLEDGE.md",
+      "size": 1891,
+      "sha256": "058920915869397a2e3a96ac4ee7704ab7a4ff180c43ce54cfabc2e01b71248f"
+    },
+    {
+      "path": "docs/RELEASE-0.1.0.md",
+      "size": 596,
+      "sha256": "b819a2ad34124d89b2823e6cb69bd5b260c7d43a77ce74eaeda9bd75f0720303"
+    },
+    {
+      "path": "docs/RELEASE-0.2.0.md",
+      "size": 384,
+      "sha256": "c3e5e7f66070f445ab95a75c21cfe27274d579baef3b2ba7ad11cdf4ef8f1274"
+    },
+    {
+      "path": "docs/RELEASE-0.3.0.md",
+      "size": 1322,
+      "sha256": "33904dbd1fca676e2fd229edaab0d8ced82880eca28880f80313ccec20f645b4"
+    },
+    {
+      "path": "docs/RELEASE-0.4.0-beta.1.md",
+      "size": 371,
+      "sha256": "57de8fef62dd4cc7ecce96d05ddcfc12d9ca2a74770a9133e72b8dec9643985d"
+    },
+    {
+      "path": "docs/RELEASE-0.5.0-beta.1.md",
+      "size": 1177,
+      "sha256": "59c2202f22f1e11d583afaaf0d161f95b6f8f036dfe1629b71427e5374119090"
+    },
+    {
+      "path": "docs/ROUTING-PROTOCOL.md",
+      "size": 1001,
+      "sha256": "c18cb2050cdb6c094cf7713e93e924e96ba0e91cda1314e0a585817909eaaeb9"
+    },
+    {
+      "path": "docs/SKILL-LIFECYCLE.md",
+      "size": 1123,
+      "sha256": "65dd9e797072d0dbefa3b083946ec72a65332d74244b03836e78eb65668b99d9"
+    },
+    {
+      "path": "environment/DEPENDENCIES.md",
+      "size": 621,
+      "sha256": "d0c880fe49d272b243b5c353ab302a28cd80a67c38918481d7f58447ab734f14"
+    },
+    {
+      "path": "environment/ENVIRONMENT-MANIFEST.json",
+      "size": 669,
+      "sha256": "ff0d0223dcfdef05b806f0aaa4a3dea9474fb182b3351cd7918d14890cdbd226"
+    },
+    {
+      "path": "environment/REBUILD-CHECKLIST.md",
+      "size": 1390,
+      "sha256": "adfb32b0e1a6550067e07ac0fef9edf0b5f5e86be65e66ded73822f75d00b093"
+    },
+    {
+      "path": "evaluations/behavior-memory.jsonl",
+      "size": 3903,
+      "sha256": "f13f1e40dfd6c5555ce9e186408a2ceab2a126ce41221864d981f35275d0ed8b"
+    },
+    {
+      "path": "evaluations/fixtures/company/rules.md",
+      "size": 122,
+      "sha256": "201a1903b6a4880816651aa5be1db994a513938264d1a422f0279eb22232604e"
+    },
+    {
+      "path": "evaluations/fixtures/people/personal.md",
+      "size": 116,
+      "sha256": "6d103590a3eaf4cb4efdc00d1412f6145f4da887e0060255f91c2c12e5242459"
+    },
+    {
+      "path": "evaluations/fixtures/projects/alpha/status.md",
+      "size": 101,
+      "sha256": "95d9c2414231ead607404d3c4687b5003f160a75c51208ba0df26e592cecebde"
+    },
+    {
+      "path": "evaluations/fixtures/projects/beta/status.md",
+      "size": 94,
+      "sha256": "cbcdecad6cc23c9c212255561a86c5f700cf28bcb85d44c5a92efdabd536bfce"
+    },
+    {
+      "path": "evaluations/fixtures/roles/product-manager/approved.md",
+      "size": 358,
+      "sha256": "30595582747301593913a1e96b702cd865c066ca9b031edd66a7a49572a712f9"
+    },
+    {
+      "path": "evaluations/fixtures/unsafe-private-sample.txt",
+      "size": 119,
+      "sha256": "4fc94f4b00d388de673eee067ded90c7cbc0d690a6de4236476893c123a07ec1"
+    },
+    {
+      "path": "evaluations/product-manager.jsonl",
+      "size": 920,
+      "sha256": "6995aa4b8a8b3a290e2baf32bb1fc463621835794d508ae59b0462bff090016e"
+    },
+    {
+      "path": "evaluations/role-routing.jsonl",
+      "size": 1279,
+      "sha256": "cdc18a42e34f091cd4092b5ccb5636c914fe34c4190335cf9b73c67a411672a7"
+    },
+    {
+      "path": "knowledge/README.md",
+      "size": 734,
+      "sha256": "e8233c2fd41aedfc58063bcb30c1ee9b76deecc9d7e4c0efc9ab87679f6917f4"
+    },
+    {
+      "path": "knowledge/company/README.md",
+      "size": 155,
+      "sha256": "9395ed74a52a4eb5085508499dd5f31798a255dcdeff0f23e8378ab7cdc58a6d"
+    },
+    {
+      "path": "knowledge/people/README.md",
+      "size": 206,
+      "sha256": "c6bfab144fa06cf8ea1da997d2b58d416507677137bed0cd3b398f23db302a5b"
+    },
+    {
+      "path": "knowledge/projects/README.md",
+      "size": 203,
+      "sha256": "5c3ede1f3ac9ea52b9e72708d4ebbd1f97cc6219f2ddf1659aeb842213b98669"
+    },
+    {
+      "path": "knowledge/roles/product-manager/approved/README.md",
+      "size": 280,
+      "sha256": "6350f366106ea2bd08639dfe61e8aed2a2a4f2a2a3d8b957befea101c7180718"
+    },
+    {
+      "path": "knowledge/roles/product-manager/approved/behavior-memory.md",
+      "size": 4715,
+      "sha256": "cf354a4d6c9b4164f6477e43b126232ba85baa15ca91898ed91e67dccd129cc2"
+    },
+    {
+      "path": "knowledge/roles/product-manager/candidates/README.md",
+      "size": 221,
+      "sha256": "049defee880047439496db4b7a1f51ef01f7e6303800cecfe5b8592faee21de0"
+    },
+    {
+      "path": "knowledge/roles/product-manager/evaluations/README.md",
+      "size": 237,
+      "sha256": "00500de1d0f85a4289c69f33cf5ccda4848745158629e6cdd1e8929d1e22765b"
+    },
+    {
+      "path": "knowledge/templates/knowledge-object.md",
+      "size": 300,
+      "sha256": "c8c73d49d2545b012c27ac94730937118be7956649bf7c903ffbffe885782114"
+    },
+    {
+      "path": "scripts/build_knowledge_index.py",
+      "size": 5219,
+      "sha256": "a9b79e76cb77557c919f0faa43cf6765cbd7d616743fc7060c2cfbfe54232948"
+    },
+    {
+      "path": "scripts/build_package.py",
+      "size": 2649,
+      "sha256": "fad426fb80fc8a02607f797c6cc7e5cb51563f77e32630ead3cf9d18e0da509d"
+    },
+    {
+      "path": "scripts/install.py",
+      "size": 18705,
+      "sha256": "8760140858a2cfecdcacac0e5500a6e3c250340e12ebecea67b6e3a40f73c12e"
+    },
+    {
+      "path": "scripts/memory_hook.py",
+      "size": 14448,
+      "sha256": "f161398448393b7f087d013dfd2dd631f1f9158538725e774c8686c15591fd5e"
+    },
+    {
+      "path": "scripts/rollback.py",
+      "size": 3972,
+      "sha256": "5a3fd9faf08091d83dd86e75bd1677519cccaea44592eac13fd10b7a4aa3d533"
+    },
+    {
+      "path": "scripts/run_behavior_eval.py",
+      "size": 1664,
+      "sha256": "1232d08260445118e1f32937e8cf02d003950389171fb34ef7db0afb8c600037"
+    },
+    {
+      "path": "scripts/run_role_eval.py",
+      "size": 2613,
+      "sha256": "234073b7fe664a39977152196aba6a49f520ea6a08bc5529537188f2de676787"
+    },
+    {
+      "path": "scripts/run_routing_eval.py",
+      "size": 1293,
+      "sha256": "fa4ad2acf271a83c262ba2fb52e6472a31e4c90b472a625b4023cf851a54ba78"
+    },
+    {
+      "path": "scripts/scan_public_release.py",
+      "size": 4365,
+      "sha256": "84c88ffdd954e7712a1b8b6d481f1520957470656d0a0ee6789f79c181c6d4c0"
+    },
+    {
+      "path": "scripts/validate_skill_registry.py",
+      "size": 1361,
+      "sha256": "f8ca6535381e9e41afdcb8d7a7cc32ee426fd363f6de8277a45525203632c572"
+    },
+    {
+      "path": "scripts/verify.py",
+      "size": 10591,
+      "sha256": "b2807320effe9fa4c13a2a6bf01c0c397de9504a8a3f7de58f4f0a8aaba78b30"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "size": 6905,
+      "sha256": "64bc7a0d30241fc3d2a9bb81954773ad780df2382fb30a2b31ab04cc2a49e419"
+    },
+    {
+      "path": "skills/REGISTRY.json",
+      "size": 444,
+      "sha256": "f38afe0891735b2e0cbf6ceb4d09400f5c2e36729f2b29f45f3195fd1eba84e2"
+    },
+    {
+      "path": "skills/codex-auto-memory/SKILL.md",
+      "size": 4118,
+      "sha256": "7ad2f9d602620074123390eba6b386ecae982cadd7167994395074384f48fb86"
+    },
+    {
+      "path": "skills/codex-auto-memory/agents/openai.yaml",
+      "size": 314,
+      "sha256": "a125fbf826146bd99eae7ef0f3a1d1584d414a3db6caec63a664a9f63751db26"
+    },
+    {
+      "path": "skills/codex-auto-memory/references/memory-policy.md",
+      "size": 2237,
+      "sha256": "e82ee7b59f66a57ad3bae396e13fa0fd55fef2629fa4ed2c0ca2496fdb82ee02"
+    },
+    {
+      "path": "skills/five-role-deliberation/SKILL.md",
+      "size": 6948,
+      "sha256": "4839924c823023967fa37d146288a9bec8277a23b362ea8b6af3f7e018489af6"
+    },
+    {
+      "path": "skills/five-role-deliberation/agents/openai.yaml",
+      "size": 315,
+      "sha256": "51da6743749ee6424e7e3a7a2a5acb80acb0c060f2d4b83cc3f7eddcda4fa3bc"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/eval-cases.md",
+      "size": 7768,
+      "sha256": "060f325d43bcd774a9229a287bd5d7187ffdcaf64e72b9797b5512e0469a0c99"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/job-routing.md",
+      "size": 2212,
+      "sha256": "2ea6ebdb7fb673fc955b2245cbefeb212731b48930b997a8ff450192163e1d02"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/output-template.md",
+      "size": 724,
+      "sha256": "54be3346e946b375308388eec91c5feb51e1c2298cc986b501f702dfa7e8f680"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/protocol.md",
+      "size": 3150,
+      "sha256": "9d2e2ebd2492c29804ec64a5f06ab6fa3cf4428fdcb6e8ed8b5b083add7b4895"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/role-overlays.md",
+      "size": 2360,
+      "sha256": "d22dd74b4047073724aaadf66317bbc1b83a798ab660f67957ef31287c932396"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/spark-routing.md",
+      "size": 9983,
+      "sha256": "65bb023524e8c29ee08e54b26a03634777a25b1e4c15935469d953504c95d4a7"
+    },
+    {
+      "path": "skills/five-role-deliberation/references/vault-routing.md",
+      "size": 841,
+      "sha256": "bb86dcd67918042eb7544220a66af9e883fcca643ce24f12aa0fe1e7bd23c2df"
+    },
+    {
+      "path": "skills/product-manager-core/SKILL.md",
+      "size": 2828,
+      "sha256": "0b79245786daa69361753d7c2793ebf8447a36c8ec95f3fdb3cf19716550d1c0"
+    },
+    {
+      "path": "skills/product-manager-core/agents/openai.yaml",
+      "size": 258,
+      "sha256": "2c537eb88ca196ab9f36e76e53509b4246707e63df6e53aef9e9a1756caaec4a"
+    },
+    {
+      "path": "skills/product-manager-core/references/knowledge-governance.md",
+      "size": 879,
+      "sha256": "851fe67cf95b16c17b746d59c6927401d83e40604a2275e947a391d461f90f7b"
+    },
+    {
+      "path": "skills/product-manager-core/references/product-workflows.md",
+      "size": 1435,
+      "sha256": "427b1565f5f72f046ef8042b8ffaf57eff4c5d85346bfe8721d87d16d2ee4639"
+    },
+    {
+      "path": "skills/product-manager-core/references/promotion-policy.md",
+      "size": 733,
+      "sha256": "07395dbb0d674b74c2570849e5a6f92c592a18415d8e54a83bc4b749bc02111c"
+    },
+    {
+      "path": "skills/product-manager-core/references/role-routing.md",
+      "size": 1831,
+      "sha256": "637393b59513ee8eefdda9d47462edcdb39f91d7949b4bb9ff2ec5bc548b5bff"
+    },
+    {
+      "path": "skills/product-ui-design-baseline/SKILL.md",
+      "size": 1166,
+      "sha256": "d3ab964a5cde17a525a3cf3e9dfdb4cd913c900779c7495e0b35248359ef357a"
+    },
+    {
+      "path": "skills/product-ui-design-baseline/agents/openai.yaml",
+      "size": 237,
+      "sha256": "b51bdea2a05e3b8d5ee8a45f277b29eed93903fb0882aaced86cd95d9f987360"
+    },
+    {
+      "path": "skills/product-ui-design-baseline/references/ui-visual-design-baseline.md",
+      "size": 970,
+      "sha256": "c07878612ba758b62c36145ac483290ce52b2294bda07692890d799d6b5b7940"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product UI Design Baseline"
+  short_description: "Project-first UI system with Arco fallback"
+  default_prompt: "Use $product-ui-design-baseline to design this interface with the established visual baseline."

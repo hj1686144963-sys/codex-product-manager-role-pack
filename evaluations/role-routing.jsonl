@@ -1,0 +1,7 @@
+{"id":"pure-product","required_route":"JOB_SPECIALIST","primary_role":"product-manager","support_roles":[],"required_tokens":["Product Manager Specialist","TASK_JUDGE"]}
+{"id":"product-ui-support","required_route":"JOB_SPECIALIST","primary_role":"product-manager","support_roles":["ui-designer"],"required_tokens":["SUPPORT_REQUEST","UI Designer Specialist"]}
+{"id":"direct-agent-architecture","required_route":"JOB_SPECIALIST","primary_role":"ai-agent-architect","support_roles":[],"required_tokens":["AI Agent Architect Specialist","CONTROL_DIRECT"]}
+{"id":"product-agent-support","required_route":"JOB_SPECIALIST","primary_role":"product-manager","support_roles":["ai-agent-architect"],"required_tokens":["SUPPORT_REQUEST","AI Agent Architect Specialist"]}
+{"id":"product-director-support","required_route":"JOB_SPECIALIST","primary_role":"product-manager","support_roles":["director"],"required_tokens":["SUPPORT_REQUEST","Director Specialist"]}
+{"id":"complex-product-panel","required_route":"DOMAIN_PANEL","primary_role":"product-manager","support_roles":[],"required_tokens":["DOMAIN_PANEL","Coordinator"]}
+{"id":"permission-gate","required_route":"HUMAN_CLARIFY","primary_role":"product-manager","support_roles":[],"required_tokens":["HUMAN_CLARIFY","permission_scope"]}

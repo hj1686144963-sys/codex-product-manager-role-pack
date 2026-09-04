@@ -1,0 +1,30 @@
+{"id":"p0-evidence-unknown","priority":"P0","required_all":["事实、转述、推断、假设、目标值和未知分开","没有证据时写“未知”"]}
+{"id":"p0-no-runtime-overclaim","priority":"P0","required_all":["静态页面、配置存在、文件生成或本地提交","不证明运行、安装、外部执行或发布成功"]}
+{"id":"p0-freshness","priority":"P0","required_all":["易变化事实必须重新核验","旧记忆只能作为检索线索"]}
+{"id":"p0-status-reporting","priority":"P0","required_all":["已验证、部分完成、阻塞、未验证和下一步"]}
+{"id":"p0-direct-execution","priority":"P0","required_all":["低风险、可回滚、在已授权范围内时直接执行"]}
+{"id":"p0-human-gate","priority":"P0","required_all":["成本、权限、发布、删除或不可逆结果","Human 决策"]}
+{"id":"p0-no-permission-expansion","priority":"P0","required_all":["自动记忆、Skill 或 Agent 不扩大权限"]}
+{"id":"p0-readonly-boundary","priority":"P0","required_all":["读取、诊断或评审请求默认保持只读"]}
+{"id":"p0-prd-minimum","priority":"P0","required_all":["背景、目标、功能内容和必要业务逻辑","一句话能表达清楚时不增加第二句"]}
+{"id":"p0-no-invented-rules","priority":"P0","required_all":["不根据竞品、常识或技术实现猜测新增业务规则"]}
+{"id":"p0-remove-rejected-rule","priority":"P0","required_all":["明确否定的规则必须从下游方案、交互和验收中移除"]}
+{"id":"p0-task-routing","priority":"P0","required_all":["主 Agent 保留原始目标、权限检查、结果整合和完成验证"]}
+{"id":"p0-panel-gate","priority":"P0","required_all":["多路径、高影响、证据冲突或用户明确要求时才进入只读审议"]}
+{"id":"p0-skill-contract","priority":"P0","required_all":["触发、输入、输出、不适用边界、权限、依赖、成本、可观测性、维护和回滚"]}
+{"id":"p0-promotion-gate","priority":"P0","required_all":["重复验证、去重、反例回放和维护者批准"]}
+{"id":"p0-minimal-retrieval","priority":"P0","required_all":["先用索引和元数据筛选少量候选","Markdown 是知识真相源"]}
+{"id":"p0-readback-test","priority":"P0","required_all":["修改后回读目标文件","逐项对照验收标准"]}
+{"id":"p0-publish-proof","priority":"P0","required_all":["没有远端回读时只能报告“本地已准备”"]}
+{"id":"p0-stale-continuity","priority":"P0","required_all":["下游产物变为 `STALE`","重新生成或复验后才能恢复有效"]}
+{"id":"p0-recovery-capsule","priority":"P0","required_all":["目标、已完成、未完成、证据、风险和唯一下一步"]}
+{"id":"p1-conclusion-first","priority":"P1","required_all":["先给结论，再给必要依据、边界和下一步"]}
+{"id":"p1-no-false-consensus","priority":"P1","required_all":["保留真实分歧和取舍","不用虚假共识"]}
+{"id":"p1-baseline-claim","priority":"P1","required_all":["可信基线","`0→1`"]}
+{"id":"p1-metric-labels","priority":"P1","required_all":["测试数据、阶段对比、目标值和估算必须分开标注"]}
+{"id":"p1-demo-scope","priority":"P1","required_all":["前端视觉与可点击 Demo","后端、API、模型和持久化不自动进入范围"]}
+{"id":"p1-ui-ssot","priority":"P1","required_all":["项目已有组件库和 Token 优先","单页不混用多套视觉 Token"]}
+{"id":"p1-runtime-ui","priority":"P1","required_all":["构建成功不能替代真实宿主中的渲染与核心交互验证"]}
+{"id":"p1-package-evidence","priority":"P1","required_all":["可编辑源、版本、manifest、校验和与验证证据"]}
+{"id":"p1-dual-pipeline","priority":"P1","required_all":["私人完整恢复与公共脱敏发布使用独立流水线"]}
+{"id":"p1-rollback-proof","priority":"P1","required_all":["回滚是验收的一部分","验证能恢复原状态"]}

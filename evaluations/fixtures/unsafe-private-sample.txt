@@ -1,0 +1,1 @@
+Synthetic negative fixture only. /Users/example/private and https://workspace.feishu.cn/wiki/example must be rejected.
